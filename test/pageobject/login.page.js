@@ -13,10 +13,11 @@ class LoginPage {
     get welcomeMsg() { return $('//android.widget.TextView[@text="Products"]'); }
     // get warning message text by xpath
     get warningcomeMsg() { return $('//*[@text="Provided credentials do not match any user in this service."]'); }
-
+    // get warning message text not entring in the field email by xpath
+    get invalidUserMsg() { return $('//*[@text="Username is required"]')}
+    // get warning message text not entring password in the field by xpath
+    get invalidPasswordMsg() { return $('//*[@text="Password is required"]')}
     async open() {
-        // opening app and launching activity
-        await browser.url('apps\Android-MyDemoAppRN.1.3.0.build-244.apk');
         // click on burgor Icon
         await this.BurgerIcon.click()
         // click on login link 

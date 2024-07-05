@@ -29,3 +29,17 @@ Then(/^I should see the warning meaasge "([^"]*)"$/, async (message) => {
     // asserting Text
     assert.strictEqual(Text, message);
 });
+
+Then(/^I should see the warning meaasge for username "([^"]*)"$/, async (message) => {
+    // get Warning message for username
+    const Text = await LoginPage.invalidUserMsg.getText();
+    // asserting Text
+    assert.strictEqual(Text, message);
+});
+
+Then(/^I should see the warning meaasge for password "([^"]*)"$/, async (message) => {
+    // get Warning message for username
+    const Text = await LoginPage.invalidPasswordMsg.getText();
+    // asserting Text
+    assert.strictEqual(Text, message);
+});
