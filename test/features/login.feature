@@ -34,7 +34,7 @@ Scenario Outline: Login with Invalid username and valid password credentials
 
     Examples:
       | username           | password   |
-      | bob@exe.com    | 10203040   |
+      | bob@exe.com        | 10203040   |
 
 Scenario Outline: Login without username and password
     Given I open the login page
