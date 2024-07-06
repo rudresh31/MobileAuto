@@ -57,7 +57,7 @@ export const config = {
         platformName: 'Android',
         'appium:deviceName': 'Pixel 4 XL',
         'appium:platformVersion': '14.0',
-        'appium:app': 'apps\Android-MyDemoAppRN.1.3.0.build-244.apk',
+        'appium:app': 'apps\\Android-MyDemoAppRN.1.3.0.build-244.apk',
         'appium:automationName': 'UiAutomator2'
         
     }],
