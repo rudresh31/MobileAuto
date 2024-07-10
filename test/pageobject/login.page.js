@@ -1,6 +1,6 @@
 class LoginPage {
     // get burger Icon by xpath
-    get BurgerIcon() { return $('//*[@content-desc="open menu"]/android.widget.ImageView'); }
+    get BurgerIcon() { return $('//android.view.ViewGroup[@content-desc="open menu"]'); }
     // get lohin link by xpath
     get loginlink() { return $('//*[@text="Log In"]'); }
     // get user name field by accessibility id
@@ -17,14 +17,7 @@ class LoginPage {
     get invalidUserMsg() { return $('//*[@text="Username is required"]')}
     // get warning message text not entring password in the field by xpath
     get invalidPasswordMsg() { return $('//*[@text="Password is required"]')}
-    async open() {
-        // click on burgor Icon
-        await this.BurgerIcon.click()
-        // click on login link 
-        await this.loginlink.click()
-
-        
-    }
+    
 }
 
-module.exports = new LoginPage();
+export default LoginPage;
