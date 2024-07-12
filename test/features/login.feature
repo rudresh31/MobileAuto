@@ -1,5 +1,6 @@
 Feature: Login functionality
 
+  @only
   Scenario Outline: Login with valid credentials
     Given I open the login page
     When I login with "<username>" and "<password>"
